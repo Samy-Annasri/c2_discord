@@ -6,23 +6,6 @@ Ce projet est un Command & Control (C2) écrit en **Rust**. Il utilise l'API Dis
 
 ---
 
-Tu as tout à fait raison, c'est l'étape la plus importante pour que ça marche ! J'ai ajouté une section "⚙️ Installation & Configuration" complète qui explique comment créer le bot sur le site de Discord, activer les droits (Intents) et où mettre les clés dans le code.
-
-Voici le README.md V2 (Complet).
-
-Tu peux tout copier d'un coup :
-Markdown
-
-# 🦀 Discord C2 Agent (Rust)
-
-**Educational & Red Teaming Proof of Concept**
-
-Ce projet est un agent de Command & Control (C2) léger écrit en **Rust**. Il utilise l'API Discord comme canal de communication pour piloter des machines distantes (Linux & Windows) de manière furtive et sécurisée.
-
-⚠️ **DISCLAIMER**: Ce logiciel est conçu à des fins éducatives et de tests de sécurité autorisés (Red Teaming). L'utilisation de ce code sur des systèmes sans autorisation explicite est illégale.
-
----
-
 ## Fonctionnalités
 
 * **Multi-Plateforme** : Fonctionne nativement sur Linux et Windows.
